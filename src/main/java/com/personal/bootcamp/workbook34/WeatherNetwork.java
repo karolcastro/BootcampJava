@@ -1,7 +1,5 @@
 package com.personal.bootcamp.workbook34;
 
-import java.util.Scanner;
-
 public class WeatherNetwork {
     public static void main(String[] args) {
 
