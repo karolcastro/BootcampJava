@@ -18,5 +18,7 @@ public class CarMain {
                 ". It was build in " + nissan.getYear()+ ". It is " + nissan.getColor() + "\n");
 
         System.out.println(Arrays.toString(nissan.getParts()));
+
+        System.out.println(nissan);
     }
 }

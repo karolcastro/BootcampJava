@@ -50,4 +50,12 @@ public class Car {
         this.color = color;
     }
 
+    @Override
+    public String toString() {
+        return "Make = " + make + '\n' +
+                "Price = " + price +  '\n' +
+                "Year = " + year +  '\n' +
+                "Color = " + color + '\n' +
+                "Parts = " + Arrays.toString(parts);
+    }
 }
