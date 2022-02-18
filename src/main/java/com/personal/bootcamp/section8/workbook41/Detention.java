@@ -1,4 +1,4 @@
-package com.personal.bootcamp.workbook41;
+package com.personal.bootcamp.section8.workbook41;
 
 public class Detention {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.personal.bootcamp.triviaQuiz;
+package com.personal.bootcamp.challenge.triviaQuiz;
 
 import java.util.Scanner;
 

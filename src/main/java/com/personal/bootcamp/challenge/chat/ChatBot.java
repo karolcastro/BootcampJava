@@ -1,4 +1,4 @@
-package com.personal.bootcamp.challenge;
+package com.personal.bootcamp.challenge.chat;
 
 import java.util.Scanner;
 

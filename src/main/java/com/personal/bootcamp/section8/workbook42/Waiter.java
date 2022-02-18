@@ -1,4 +1,4 @@
-package com.personal.bootcamp.workbook42;
+package com.personal.bootcamp.section8.workbook42;
 
 public class Waiter {
     public static void main(String[] args) {
