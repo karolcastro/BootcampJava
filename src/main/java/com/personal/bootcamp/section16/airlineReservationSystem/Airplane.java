@@ -1,4 +1,4 @@
-package com.personal.bootcamp.airlineReservationSystem;
+package com.personal.bootcamp.section16.airlineReservationSystem;
 
 public class Airplane {
 
