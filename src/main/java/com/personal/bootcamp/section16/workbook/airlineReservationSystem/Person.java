@@ -15,6 +15,9 @@ public class Person {
         this.seatNumber = seatNumber;
     }
 
+    public Person(Person person) {
+    }
+
     public void applyPassport(){
 
     }
@@ -41,6 +44,14 @@ public class Person {
     }
 
     public int getSeatNumber() {
+        return this.seatNumber;
+    }
+
+    public String setName(String jad_slim) {
+        return this.name;
+    }
+
+    public int seatNumber(int i) {
         return this.seatNumber;
     }
 }

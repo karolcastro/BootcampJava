@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Person person = new Person("Rayan Slim", "Canadian", "01/01/1111", 5);
-        Person person2 = new Person("Jad Slim", "Canadian", "01/01/1111", 3);
 
         /*person.name = "Maria";
         person.nationality = "Brasileira";
@@ -18,6 +17,10 @@ public class Main {
         System.out.println(person.getDateOfBirth());
         System.out.println(Arrays.toString(person.getPassport()));
         System.out.println(person.getSeatNumber());
+
+        Person person2 = new Person(person);
+        person2.setName("Jad Slim");
+        person2.seatNumber(3);
 
         System.out.println();
         System.out.println("Name: " + person2.getName()+"\n" + "Nationality: " +person2.getNationality() + "\n" + "Date of Birth: " +person2.getDateOfBirth() + "\n" +
