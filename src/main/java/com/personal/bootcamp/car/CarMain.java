@@ -8,17 +8,11 @@ public class CarMain {
         String[] parts = {"tires", "Keys"};
 
         Car nissan = new Car("Nissan", 50000, 2018, "Black", parts );
-
-        System.out.println("The car make is " + nissan.getMake() + ", is worth $" + nissan.getPrice() +
-                ". It was build in " + nissan.getYear()+ ". It is " + nissan.getColor() + "\n");
+        Car dodger = new Car("Dodger", 80000, 2020, "Blue", parts);
 
         nissan.setColor("blue");
 
-        System.out.println("The car make is " + nissan.getMake() + ", is worth $" + nissan.getPrice() +
-                ". It was build in " + nissan.getYear()+ ". It is " + nissan.getColor() + "\n");
-
-        System.out.println(Arrays.toString(nissan.getParts()));
-
-        System.out.println(nissan);
+        nissan.drive();
+        dodger.drive();
     }
 }

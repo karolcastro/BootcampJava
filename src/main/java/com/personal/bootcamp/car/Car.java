@@ -50,6 +50,11 @@ public class Car {
         this.color = color;
     }
 
+    public void drive() {
+        System.out.println("You bought the beautiful " + this.color + " " + this.year + " " + this.make + " for " + this.price +" .");
+        System.out.println("Please drive your car to the nearest exit. \n");
+    }
+
     @Override
     public String toString() {
         return "Make = " + make + '\n' +
