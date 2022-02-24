@@ -1,6 +1,8 @@
 package com.personal.bootcamp.section16.workbook.airlineReservationSystem;
 
 
+import java.util.Arrays;
+
 public class Person {
     private String name;
    private String nationality;
@@ -8,22 +10,34 @@ public class Person {
    private String[] passport;
    private int seatNumber;
 
-    public Person(String name, String nationality, String dateOfBirth, int seatNumber) {
+    public Person(String name, String nationality, String dateOfBirth, int seatNumber, String passport) {
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
+        this.passport = new String[3];
     }
 
-    public Person(Person person) {
+    public Person(Person source) {
+        this.name = source.name;
+        this.nationality = source.nationality;
+        this.dateOfBirth = source.dateOfBirth;
+        this.seatNumber = source.seatNumber;
+        this.passport = Arrays.copyOf(source.passport, source.passport.length);
     }
 
-    public void applyPassport(){
+    public boolean applyPassport(){
+        int number = (int) (Math.random() * 2 );
+        if (number == 0) {
+            return false;
+        } else {
+            return true;
+        }
 
     }
 
     public void chooseSeat(){
-
+        this.seatNumber = (int) (Math.random() * 11 + 1);
     }
 
 
@@ -40,7 +54,7 @@ public class Person {
     }
 
     public String[] getPassport() {
-        return this.passport;
+        return Arrays.copyOf(this.passport, this.passport.length);
     }
 
     public int getSeatNumber() {
@@ -53,5 +67,13 @@ public class Person {
 
     public int seatNumber(int i) {
         return this.seatNumber;
+    }
+
+    public void setPassport() {
+        this.passport = new String[] {
+                this.name,
+                this.nationality,
+                this.dateOfBirth,
+        };
     }
 }
