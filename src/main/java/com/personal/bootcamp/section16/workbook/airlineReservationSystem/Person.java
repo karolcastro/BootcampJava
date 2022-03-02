@@ -76,4 +76,13 @@ public class Person {
                 this.dateOfBirth,
         };
     }
+
+    @Override
+    public String toString() {
+        return "Name= " + name + "\n" +
+                "Nationality= " + nationality + '\n' +
+                "Date Of Birth= " + dateOfBirth + '\n' +
+                "Passport=" + Arrays.toString(passport) +  '\n' +
+                "SeatNumber= " + seatNumber ;
+    }
 }
