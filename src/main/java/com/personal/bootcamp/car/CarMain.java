@@ -1,18 +1,20 @@
 package com.personal.bootcamp.car;
 
-import java.util.Arrays;
-
 public class CarMain {
     public static void main(String[] args) {
 
-        String[] parts = {"tires", "Keys"};
+        Car[] cars = new Car[] {
+                new Car("Nissan", 50000, 2018, "Black", new String[]{"tires", "Keys"} ),
+                new Car("Dodger", 80000, 2020, "Blue", new String[]{"tires", "Keys"}),
+        };
 
-        Car nissan = new Car("Nissan", 50000, 2018, "Black", parts );
-        Car dodger = new Car("Dodger", 80000, 2020, "Blue", parts);
+       Dealership dealership = new Dealership();
 
-        nissan.setColor("blue");
+       for (int i = 0; i < cars.length; i++) {
+           dealership.setCar(cars[i], i );
+       }
 
-        nissan.drive();
-        dodger.drive();
+       Car newCar = dealership.getCar(0);
+       System.out.println(newCar);
     }
 }
