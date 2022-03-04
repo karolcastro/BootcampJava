@@ -36,11 +36,6 @@ public class Person {
 
     }
 
-    public void chooseSeat(){
-        this.seatNumber = (int) (Math.random() * 11 + 1);
-    }
-
-
     public String getName() {
         return this.name;
     }
@@ -69,12 +64,25 @@ public class Person {
         return this.seatNumber;
     }
 
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
     public void setPassport() {
         this.passport = new String[] {
                 this.name,
                 this.nationality,
                 this.dateOfBirth,
         };
+    }
+
+    public void chooseSeat(){
+
+        this.seatNumber = (int) (Math.random() * 11 + 1);
     }
 
     @Override

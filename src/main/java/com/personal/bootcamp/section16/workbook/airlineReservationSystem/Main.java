@@ -4,15 +4,17 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("Rayan Slim", "Canadian", "01/01/1111", 5, "BRT");
+        Person[] person = new Person[] {
+                new Person("Rayan Slim", "Canadian", "01/01/1111", 5, "BRT"),
+                new Person("Adam Slim", "Canadian", "02/01/1111", 5, "BRT"),
+        };
 
-        if (person.applyPassport() == true) {
-            person.setPassport();
+        Airplane airplane = new Airplane();
 
+        for (int i = 0; i < person.length; i++) {
+            airplane.setPerson(person[i]);
         }
 
-        System.out.println(person);
-
-
+        System.out.println(airplane.getPerson(1));
     }
 }
